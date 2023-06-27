@@ -329,7 +329,8 @@ header nav a:hover{
 
 #portfolio .row .column .work .work-modal .modal-text p{
     color: #fff;
-    font-size: 15px;
+    font-size: 17px;
+    text-align: justify;
 }
 
 
@@ -389,28 +390,35 @@ header nav a:hover{
 
 #portfolio .row .column .work .work-modal2 .modal-text2 p{
     color: #fff;
-    font-size: 15px;
+    font-size: 17px;
+    text-align: justify;
 }
 
 #portfolio .row .column .work .work-modal2 .modal-img2-f{
+    margin-left: 5%;
     display: inline-block;
-    width: 50%;
+    width: 30%;
+}
+
+#portfolio .row .column .work .work-modal2 .modal-img2-c{
+    display: inline-block;
+    width: 30%;
 }
 
 #portfolio .row .column .work .work-modal2 .modal-img2-n{
-    display: block;
-    width: 50%;
-    float: right;
+    display: inline-block;
+    width: 30%;
+    margin-left: 15%;
 }
 
 #portfolio .row .column .work .work-modal2 .modal-img2-f img{
-    padding: 20px;
-    width: auto
+    width: 500px;
+    height: 150px;
 }
 
 #portfolio .row .column .work .work-modal2 .modal-img2-n img{
-    padding: 20px;
-    width: auto;
+    width: 200px;
+    height: 150px;
 }
 
 #portfolio .row .column .work .work-modal2 button{
@@ -458,7 +466,8 @@ header nav a:hover{
 
 #portfolio .row .column .work .work-modal3 .modal-text3 p{
     color: #fff;
-    font-size: 15px;
+    font-size: 17px;
+    text-align: justify;
 }
 
 #portfolio .row .column .work .work-modal3 .modal-img3-f{
@@ -680,6 +689,26 @@ header nav a:hover{
 
     #portfolio .row .column{
         width: 80%;
+        margin: auto;
+    }
+
+    #portfolio .row .column .work {
+        display: block;
+        text-align: center;
+    }
+
+    #portfolio .row .column .work .work-desc .work-modal{
+        width: 60%;
+        margin: auto;
+    }
+
+    #portfolio .row .column .work .work-desc .work-modal2{
+        width: 60%;
+        margin: auto;
+    }
+
+    #portfolio .row .column .work .work-desc .work-modal3{
+        width: 60%;
         margin: auto;
     }
 }
