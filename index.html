@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <title>Isai López</title>
+</head>
+<body>
+    <div class="container">
+        <!--HEADER-->
+        <header>
+            <h1 class="gradient-text">Isai López</h1>
+            <nav id="nav">
+                <a href="#home" onclick="selected()">Inicio</a>
+                <a href="#aboutme" onclick="selected()">Sobre Mi</a>
+                <a href="#curriculum" onclick="selected()">Currículum</a>
+                <a href="#portfolio" onclick="selected()">Portafolio</a>
+                <a href="#contact" onclick="selected()">Contacto</a>
+            </nav>
+            <div id="icon-nav" class="nav-responsive" onclick="showMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <!--HOME-->
+        <section id="home">
+            <div class="row">
+                <div class="column">
+                    <p>Soy Isai López López</p>
+                    <h1 class="gradient">Desarrollador Web</h1>
+                    <a href="#contact"><button>Contáctame</button></a>
+                </div>
+                <div class="column">
+                    <div class="img-container">
+                        <img src="img/me.jpg" alt="me">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--ABOUT ME-->
+        <section id="aboutme">
+            <div class="row">
+                <div class="column-info">
+                    <h3>Sobre Mi</h3>
+                    <h2>Soy Desarrollador web y Android</h2>
+                    <p>Soy de la Ciudad de México, estudié la carrera de Ingeniería en Informática en el Instituto Politécnico Nacional en el plantel UPIICSA. Desarrollé mi gusto por la tecnología y el desarrollo de sistemas desde los 16 años pero tenia cierta atención hacia el desarrollo web y de aplicaciones móviles.</p>
+                    <br>
+                    <p>En mi tiempo libre me gusta ver películas, escuchar música, jugar videojuegos y salir a comer o pasear con mis amigos más cercanos, también en esos tiempos libres me gusta investigar y estudiar temas nuevos ya sea de las tecnologías que ya conozco o alguna totalmente nueva.</p>
+                </div>
+                <div class="column">
+                    <div class="img-container">
+                        <img src="img/desarrollo3.png" alt="playa">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--CURRICULUM-->
+        <section id="curriculum">
+            <h3>Currículum</h3>
+            <div class="row">
+                <div class="column-info">
+                    <p>Experiencia</p>
+                    <h2>2 Años de Experiencia como<span class="txt-especial"> Desarrollador Web</span></h2>
+                    <a href="pdf/CV_IsaiLopezLopez.pdf" download="CV_IsaiLopezLopez"><button class="btn-cv">Descargar CV</button></a>
+                </div>
+                <div class="column">
+                    <div class="time-line">
+                        <div class="item">
+                            <span class="circle"></span>
+                            <h4>Info100</h4>
+                            <p>Becario Procesos (2021-2021)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circle"></span>
+                            <h4>IPN - ESM</h4>
+                            <p>Becario Unidad de Informática (2022-2022)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circle"></span>
+                            <h4>App Escuela</h4>
+                            <p>Desarrollador Móvil (2022-2023)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circle"></span>
+                            <h4>Afore MX</h4>
+                            <p>Desarrollador Móvil (2023-presente)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circle"></span>
+                            <h4>Neaxis</h4>
+                            <p>Bussines Analytics (2023-presente)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--PORTAFOLIO-->
+        <section id="portfolio">
+            <h3>Portafolio</h3>
+            <div class="row">
+                <div class="column">
+                    <div class="work">
+                        <button class="work-desc" id="open-modal" onclick="seeModal()">Portafolio de Proyectos</button>
+                        <img src="img/portfolio.png" alt="trabajo1">
+                        <dialog id="modal-info" class="work-modal">
+                            <div class="modal-text">
+                                <h3>Portafolio de Proyectos</h3>
+                                <p>Este proyecto personal fue desarrollado con la finalidad de demostrar mis habilidades técnicas y proyectos en los que he tenido participación.</p><br>
+                                <p>Las tecnologías que utilicé son las siguientes: <br>
+                                    <br>    ➼  HTML 5 
+                                    <br>    ➼  CSS 
+                                    <br>    ➼  JavaScript
+                                </p>
+                            </div>
+                            <div class="modal-img">
+                                <div>
+                                    <img src="img/portfolio.png" alt="img-wrk">
+                                </div>
+                            </div>
+                            <button id="close-modal" onclick="closeModal()">Cerrar</button>  
+                        </dialog>
+                        <!-- <script>
+                            (function() {
+                                    var openbutton = document.getElementById('open-modal');
+                                    var closebutton = document.getElementById('close-modal');
+                                    var modal = document.getElementById('modal-info');
+
+                                    // Openbutton opens a modal dialog
+                                    openbutton.addEventListener('click', function() {
+                                        modal.showModal();
+                                    });
+
+                                    // Closebutton closes the dialog
+                                    closebutton.addEventListener('click', function() {
+                                        modal.close();
+                                    });
+
+                                })();
+                          </script> -->
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="work">
+                        <button class="work-desc" id="open-modal2" onclick="seeModal2()">App Finanzas Contigo</button>
+                        <img src="img/finanzas.png" alt="trabajo2">
+                        <dialog id="modal-info2" class="work-modal2">
+                            <div class="modal-text2">
+                                <h3>App Android Finanzas Contigo</h3>
+                                <p>Este proyecto fue desarrollado con la finalidad de agilizar el proceso de solicitud de información y retiro de AFORE, de igual manera <br> 
+                                    se puede llevar un control del proceso realizado por parte de los administradores. El usuario puede registrarse e ingresar a la aplicación <br>
+                                    y hacer uso de los servicios otorgados, como solictud de retiro de AOFRE o contactar a asesores, para una atención mas personalizada, <br>
+                                    esta aplicación se ecnuentra subida en Play Store.</p><br>
+                                <p>Las tecnologías que utilicé para su desarrollo son las siguientes: <br>
+                                    <br>    ➼  Dart 
+                                    <br>    ➼  Flutter 
+                                    <br>    ➼  NestJS
+                                    <br>    ➼  MongoDB
+                                </p>
+                            </div>
+                            <div class="modal-img2-f">
+                                <div>
+                                    <img src="img/flutterwhite.png" alt="img-wrk">
+                                </div>
+                            </div>
+                            <div class="modal-img2-n">
+                                <div>
+                                    <img src="img/nest.png" alt="img-wrk">
+                                </div>
+                            </div>
+                            <button id="close-modal2" onclick="closeModal2()">Cerrar</button> 
+                        </dialog>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="work">
+                        <button class="work-desc" id="open-modal3" onclick="seeModal3()">App para Reservar Fotos Escolares</button>
+                        <img src="img/escuela.jpeg" alt="trabajo2">
+                        <dialog id="modal-info3" class="work-modal3">
+                            <div class="modal-text3">
+                                <h3>App Reserva Fotografías Escolares</h3>
+                                <p>Este proyecto fue desarrollado con el propósito de agendar citas para la toma de foto escolares, asi como la selección del paquete o productos.<br> 
+                                    La aplicación cuenta con la posibilida de realizar una imagen de prueba para entender al usuario de como desea la Fotografía final, esto es<br>
+                                    posible ya que se cuenta con un menu interactivo para agregar escudos escolares, nombres, fondos, etc y poder acomodarlos en las posición<br>
+                                    que desee el usuario, al finalizar la edición guarda el pedido y le fecah seleccionada para realizar la toma de la fotografía</p><br>
+                                <p>Las tecnologías que se utilizaron para su desarrollo son las siguientes: <br>
+                                    <br>    ➼  Dart 
+                                    <br>    ➼  Flutter 
+                                    <br>    ➼  NestJS
+                                    <br>    ➼  MongoDB
+                                </p>
+                            </div>
+                            <div class="modal-img3-f">
+                                <div>
+                                    <img src="img/login_escuela.jpeg" alt="img-wrk">
+                                </div>
+                            </div>
+                            <div class="modal-img3-c">
+                                <div>
+                                    <img src="img/edit.jpeg" alt="img-wrk">
+                                </div>
+                            </div>
+                            <div class="modal-img3-n">
+                                <div>
+                                    <img src="img/pedidos.jpeg" alt="img-wrk">
+                                </div>
+                            </div>
+                            <button id="close-modal3" onclick="closeModal3()">Cerrar</button> 
+                        </dialog>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!--CONTACTO-->
+        <section id="contact">
+            <h2>Contacto</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <div class="info">
+                        <h3>Correo:</h3>
+                        <p>isailopez.dev@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono:</h3>
+                        <p>55-29-37-98-41</p>
+                    </div>
+                    <div class="info">
+                        <h3>País:</h3>
+                        <p>México</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/islolo981204/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Chais1204"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/chais98"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/chais1204/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="mailto:isailopez.dev@gmail.com" method="POST" enctype="text/plain">
+                        <div class="entrys">
+                            <label for="nombre">Nombre</label>
+                            <input type="text">
+                        </div>
+                        <div class="entrys">
+                            <label for="email">Correo</label>
+                            <input type="text">
+                        </div>
+                        <div class="entrys">
+                            <label for="exampleTextarea">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        </div>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

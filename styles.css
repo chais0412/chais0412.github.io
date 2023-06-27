@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geologica";
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #131313;
+    color: #fff;
+    padding: 0 10px;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+
+/* HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262626;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.gradient-text{
+    background-image: linear-gradient(45deg, #ed921a,#d5235f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header nav a{
+    text-decoration: none;
+    display: inline-block;
+    color:  #fff;
+    margin-left: 20px;
+}
+
+header nav a:hover{
+    color: #ed921a;
+}
+
+.nav-responsive{
+    font-size: 25px;
+    color: #fff;
+    display: none;
+}
+
+/*SECCION HOME*/
+
+#home{
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#home .row{
+    display: flex;
+    align-items: center;
+}
+
+#home .row .column{
+    width: 50%;
+}
+
+#home .row .column .img-container{
+    max-width: 200px;
+    width: fit-content;
+    margin: auto;
+}
+
+#home .row .column .img-container img{
+    width: 100%;
+    border-radius: 52%;
+}
+
+#home .row .column p{
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#home .row .column h1{
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+#home .row .column button{
+    display: inline-block;
+    border: none;
+    background: linear-gradient(45deg, #ed921a,#d5235f);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#home .row .column-info button:hover{
+    transform: scale(1.1);
+}
+
+/*Seccion ABOUT ME*/
+
+#aboutme{
+    background-color: #262626;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#aboutme .row{
+    display: flex;
+}
+
+#aboutme .row .column-info{
+    width: 50%;
+    padding: 20px;
+}
+
+#aboutme .row .column-info h3{
+    color: #fe9018;
+    margin-top: 10px;
+    font-size: 27px;
+}
+
+#aboutme .row .column-info h2{
+    color: #fff;
+    margin: 15px;
+    font-size: 1.8rem;
+}
+
+#aboutme .row .column-info p{
+    font-size: 15px;
+}
+
+#aboutme .row .column .img-container{
+    margin: 30px;
+    width: 100%;
+}
+
+#aboutme .row .column .img-container img{
+    width: 90%;
+    display: block;
+}
+
+/*Seccion CURRICULUM*/
+
+#curriculum{
+    background-color: #262626;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#curriculum .row{
+    display: flex;
+}
+
+#curriculum .row .column-info{
+    width: 50%;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+#curriculum h3{
+    color: #fe9018;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 27px;
+    text-align: center;
+}
+
+#curriculum .row .column-info p{
+    color: #fe9018;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+#curriculum .row .column-info h2{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    line-height: 40px;
+}
+
+#curriculum .row .column-info span{
+    color: #fe9018;
+}
+
+#curriculum .row .column-info button{
+    display: inline-block;
+    border: none;
+    background: linear-gradient(45deg, #ed921a,#d5235f);
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+#curriculum .row .column-info button:hover{
+    transform: scale(1.1);
+}
+
+#curriculum .row .column .time-line{
+    margin: 20px;
+    border-left: 2px solid #fff;
+    position: relative;
+}
+
+#curriculum .row .column .time-line .item{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#curriculum .row .column .time-line .item .circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: -6px;
+    margin-top: 6px;
+}
+
+/*Seccion PORTAFOLIO*/
+
+#portfolio{
+    background-color: #262626;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+#portfolio h3{
+    color: #fe9018;
+    margin-bottom: 20px;
+    font-size: 27px;
+    text-align: center;
+}
+
+#portfolio .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+#portfolio .row .column{
+    margin: 10px;
+    width: 30%;
+}
+
+#portfolio .row .work{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#portfolio .row .column .work .work-desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: medium;
+    color: #fe9018;
+    background: rgba(0, 0, 0, .6);
+}
+
+#portfolio .row .column .work .work-desc:hover{
+    opacity: .2;
+}
+
+#portfolio .row img{
+    object-fit: cover;
+    width: 100%;
+    height: 10rem;
+    display: block;
+}
+
+/*Zona de MODALES*/
+/*MODAL 1*/
+
+#portfolio .row .column .work .work-modal{
+    position: fixed;
+    align-self: center;
+    background-color: #262626;
+    border-color: #fe9018;
+    color: #fff;
+    left: 15%;
+    top: 3%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+#portfolio .row .column .work .work-modal .modal-text{
+    width: 100%;
+    padding: 30px;
+}
+
+#portfolio .row .column .work .work-modal .modal-text h3{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#portfolio .row .column .work .work-modal .modal-text p{
+    color: #fff;
+    font-size: 15px;
+}
+
+
+#portfolio .row .column .work .work-modal .modal-img{
+    width: 100%;
+}
+
+#portfolio .row .column .work .work-modal .modal-img img{
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portfolio .row .column .work .work-modal button{
+    display: inline-block;
+    border: none;
+    background: linear-gradient(45deg, #ed921a,#d5235f);
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 15px 10px;
+}
+
+#portfolio .row .column .work .work-modal button:hover{
+    transform: scale(1.1);
+}
+
+/*Modal 2*/
+
+#portfolio .row .column .work .work-modal2{
+    position: fixed;
+    align-self: center;
+    background-color: #262626;
+    border-color: #fe9018;
+    color: #fff;
+    left: 15%;
+    top: 3%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+#portfolio .row .column .work .work-modal2 .modal-text2{
+    width: 100%;
+    padding: 30px;
+}
+
+#portfolio .row .column .work .work-modal2 .modal-text2 h3{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#portfolio .row .column .work .work-modal2 .modal-text2 p{
+    color: #fff;
+    font-size: 15px;
+}
+
+#portfolio .row .column .work .work-modal2 .modal-img2-f{
+    display: inline-block;
+    width: 50%;
+}
+
+#portfolio .row .column .work .work-modal2 .modal-img2-n{
+    display: block;
+    width: 50%;
+    float: right;
+}
+
+#portfolio .row .column .work .work-modal2 .modal-img2-f img{
+    padding: 20px;
+    width: auto
+}
+
+#portfolio .row .column .work .work-modal2 .modal-img2-n img{
+    padding: 20px;
+    width: auto;
+}
+
+#portfolio .row .column .work .work-modal2 button{
+    display: block;
+    border: none;
+    background: linear-gradient(45deg, #ed921a,#d5235f);
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 15px 10px;
+}
+
+#portfolio .row .column .work .work-modal2 button:hover{
+    transform: scale(1.1);
+}
+
+/*Modal 3*/
+
+#portfolio .row .column .work .work-modal3{
+    position: fixed;
+    align-self: center;
+    background-color: #262626;
+    border-color: #fe9018;
+    color: #fff;
+    left: 15%;
+    top: 3%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+#portfolio .row .column .work .work-modal3 .modal-text3{
+    width: 100%;
+    padding: 30px;
+}
+
+#portfolio .row .column .work .work-modal3 .modal-text3 h3{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#portfolio .row .column .work .work-modal3 .modal-text3 p{
+    color: #fff;
+    font-size: 15px;
+}
+
+#portfolio .row .column .work .work-modal3 .modal-img3-f{
+    display: inline-block;
+    width: 30%;
+}
+
+#portfolio .row .column .work .work-modal3 .modal-img3-c{
+    display: inline-block;
+    width: 30%;
+}
+
+#portfolio .row .column .work .work-modal3 .modal-img3-n{
+    display: inline-block;
+    width: 30%;
+}
+
+#portfolio .row .column .work .work-modal3 .modal-img3-f img{
+    border-radius: 10px;
+    width: 200px;
+    height: 450px;
+}
+
+#portfolio .row .column .work .work-modal3 .modal-img3-c img{
+    border-radius: 10px;
+    width: 200px;
+    height: 450px;
+}
+
+#portfolio .row .column .work .work-modal3 .modal-img3-n img{
+    border-radius: 10px;
+    width: 200px;
+    height: 450px;
+}
+
+#portfolio .row .column .work .work-modal3 button{
+    display: block;
+    border: none;
+    background: linear-gradient(45deg, #ed921a,#d5235f);
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 15px 10px;
+}
+
+#portfolio .row .column .work .work-modal3 button:hover{
+    transform: scale(1.1);
+}
+
+/*Seccion CONTACTO*/
+
+#contact{
+    background-color: #262626;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+#contact .row{
+    display: flex;
+}
+
+#contact .row .column{
+    width: 50%;
+    margin: 20px;
+}
+
+#contact h2{
+    color: #fe9018;
+    margin-bottom: 20px;
+    font-size: 27px;
+    text-align: center;
+}
+
+#contact .row .column .info{
+    margin-bottom: 30px;
+    border-left: 3px solid #ed921a;
+    padding-left: 8px;
+}
+
+#contact .row .column .info p{
+    color: #fe9018;
+}
+
+#contact .social-media{
+    margin-top: 40px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#contact .social-media a{
+    color: #fe9018;
+    text-decoration: none;
+    font-size: 35px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#contact form{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #131313;
+    border-radius: 10px;
+}
+
+#contact form .entrys{
+    margin-bottom: 30px;
+}
+
+#contact form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fe9018;
+    width: 100%;
+    padding: 7px 0;
+    outline: none;
+    color: #ed921a;
+}
+
+#contact form textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fe9018;
+    width: 100%;
+    height: 100px;
+    padding: 7px 0;
+    outline: none;
+    color: #ed921a;
+}
+
+#contact form button{
+    display: inline-block;
+    border: none;
+    background: linear-gradient(45deg, #ed921a,#d5235f);
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+#contact form button:hover{
+    transform: scale(1.1);
+}
+
+/*Seccion RESPONSIVE*/
+
+@media only screen and (max-width: 700px){
+    header nav{
+        position: initial;
+        display: none;
+        transform: translate(0);
+    }
+
+    .nav-responsive{
+        display: block;
+    }
+
+    nav.responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #262626;
+        z-index: 99;
+    }
+
+    nav.responsive a{
+        display: block;
+        width: fit-content;
+        margin:  10px auto;
+        font-size: 30px;
+    }
+
+    #home .row{
+        display: block;
+        text-align: center;
+    }
+
+    #home .row .column{
+        width: 100%;
+    }
+
+    #aboutme .row{
+        display: block;
+        text-align: center;
+    }
+
+    #aboutme .row .column{
+        width: 100%;
+    }
+
+    #curriculum .row{
+        display: block;
+        text-align: center;
+    }
+
+    #curriculum .row .column{
+        width: 100%;
+    }
+
+    #curriculum .row .column .column-info{
+        text-align: left;
+    }
+
+    #portfolio .row{
+        display: block;
+        text-align: center;
+    }
+
+    #portfolio .row .column{
+        width: 80%;
+        margin: auto;
+    }
+}
+
