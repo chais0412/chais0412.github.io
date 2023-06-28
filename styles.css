@@ -136,7 +136,7 @@ header nav a:hover{
 #aboutme .row .column-info h3{
     color: #fe9018;
     margin-top: 10px;
-    font-size: 27px;
+    font-size: 30px;
 }
 
 #aboutme .row .column-info h2{
@@ -157,6 +157,54 @@ header nav a:hover{
 #aboutme .row .column .img-container img{
     width: 90%;
     display: block;
+}
+
+/*Seccion SKILLS*/
+
+#skills{
+    background-color: #262626;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#skills .row{
+    display: flex;
+}
+
+#skills .column-info h3{
+    color: #fe9018;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#skills .row .column-info{
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#skills .row .column-info h2{
+    color: #fff;
+    margin: 15px;
+    font-size: 1.8rem;
+}
+
+#skills .row .column-info p{
+    font-size: 15px;
+}
+
+#skills .row .column .img-container{
+    margin: 10px;
+    width: 100%;
+}
+
+#skills .row .column .img-container img{
+    width: 80%;
+    display: block;
+    padding: 5px;
 }
 
 /*Seccion CURRICULUM*/
@@ -180,9 +228,9 @@ header nav a:hover{
 
 #curriculum h3{
     color: #fe9018;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 27px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -314,7 +362,7 @@ header nav a:hover{
     background-color: #262626;
     border-color: #fe9018;
     color: #fff;
-    left: 15%;
+    left: 5%;
     top: 3%;
     margin: 10px;
     padding: 10px;
@@ -374,7 +422,7 @@ header nav a:hover{
     background-color: #262626;
     border-color: #fe9018;
     color: #fff;
-    left: 15%;
+    left: 5%;
     top: 3%;
     margin: 10px;
     padding: 10px;
@@ -400,30 +448,30 @@ header nav a:hover{
 }
 
 #portfolio .row .column .work .work-modal2 .modal-img2-f{
-    margin-left: 5%;
+    margin-left: 3%;
     display: inline-block;
-    width: 30%;
+    width: 45%;
 }
 
-#portfolio .row .column .work .work-modal2 .modal-img2-c{
+/* #portfolio .row .column .work .work-modal2 .modal-img2-c{
     display: inline-block;
     width: 30%;
-}
+} */
 
 #portfolio .row .column .work .work-modal2 .modal-img2-n{
     display: inline-block;
-    width: 30%;
-    margin-left: 15%;
+    width: 45%;
 }
 
 #portfolio .row .column .work .work-modal2 .modal-img2-f img{
-    width: 500px;
-    height: 150px;
+    width: 100%;
+    display: block;
 }
 
 #portfolio .row .column .work .work-modal2 .modal-img2-n img{
-    width: 200px;
-    height: 150px;
+    width: 30%;
+    display: block;
+    margin: 15px;
 }
 
 #portfolio .row .column .work .work-modal2 button{
@@ -450,7 +498,7 @@ header nav a:hover{
     background-color: #262626;
     border-color: #fe9018;
     color: #fff;
-    left: 15%;
+    left: 5%;
     top: 3%;
     margin: 10px;
     padding: 10px;
@@ -491,21 +539,21 @@ header nav a:hover{
 }
 
 #portfolio .row .column .work .work-modal3 .modal-img3-f img{
-    border-radius: 10px;
-    width: 200px;
-    height: 450px;
+    width: 90%;
+    display: block;
+    padding: 5px;
 }
 
 #portfolio .row .column .work .work-modal3 .modal-img3-c img{
-    border-radius: 10px;
-    width: 200px;
-    height: 450px;
+    width: 90%;
+    display: block;
+    padding: 5px;
 }
 
 #portfolio .row .column .work .work-modal3 .modal-img3-n img{
-    border-radius: 10px;
-    width: 200px;
-    height: 450px;
+    width: 90%;
+    display: block;
+    padding: 5px;
 }
 
 #portfolio .row .column .work .work-modal3 button{
