@@ -88,6 +88,12 @@ header nav a:hover{
     letter-spacing: 3px;
 }
 
+#home .row .column .navegador{
+    margin: 10px 0;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+
 #home .row .column h1{
     font-size: 2.5rem;
     margin: 10px 0;
@@ -332,7 +338,6 @@ header nav a:hover{
     font-size: 17px;
     text-align: justify;
 }
-
 
 #portfolio .row .column .work .work-modal .modal-img{
     width: 100%;
